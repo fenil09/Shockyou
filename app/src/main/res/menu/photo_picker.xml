@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item app:showAsAction="always" android:id="@+id/choosemusic" android:icon="@drawable/mp3"
+          android:visible="true"
+          android:title="music"/>
+
+    <item android:title="Choose picture" android:id="@+id/item1" android:visible="true"
+          android:checkable="false" android:icon="@drawable/image" app:showAsAction="always"
+          android:enabled="true"/>
+</menu>

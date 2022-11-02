@@ -5,14 +5,56 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="Test your selected sound"
+            android:textAlignment="textStart"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:clickable="false"
+            android:paddingLeft="30dp"
+            android:background="@drawable/roundbutton"
+            android:layout_width="360dp"
+            android:layout_height="80dp" android:id="@+id/button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintVertical_bias="0.518"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="65dp"
+            android:layout_height="50dp" android:id="@+id/button2"
+            android:background="@drawable/ic_baseline_arrow_right_24"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/button" app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="@+id/button" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.488"/>
+    <ImageView
+            android:layout_width="362dp"
+            android:src="@drawable/bust_2"
+            android:scaleType="fitXY"
+            android:layout_height="257dp" android:id="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.084"/>
 
+    <com.ncorti.slidetoact.SlideToActView android:layout_width="360dp" android:layout_height="70dp"
+                                          app:text="Slide to Shock your friends"
+                                          app:text_color="@color/black"
+                                          app:slider_icon="@drawable/skull"
+                                          app:text_style="bold"
+                                          app:complete_icon="@drawable/skull"
+                                          app:slider_icon_color="@color/white"
+                                          app:inner_color="@color/black"
+                                          app:layout_constraintTop_toTopOf="parent"
+                                          app:layout_constraintBottom_toBottomOf="parent"
+                                          app:layout_constraintVertical_bias="0.922"
+                                          app:layout_constraintEnd_toEndOf="parent"
+                                          app:layout_constraintStart_toStartOf="parent"
+                                          app:layout_constraintHorizontal_bias="0.487">
+
+    </com.ncorti.slidetoact.SlideToActView>
 </androidx.constraintlayout.widget.ConstraintLayout>
